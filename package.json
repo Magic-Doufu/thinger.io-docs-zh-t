@@ -1,0 +1,20 @@
+{
+  "name": "vuepressBlogDemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vuepress-plugin-element-tabs": "https://github.com/Magic-Doufu/vuepress-plugin-tabs/tarball/master"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "vuepress-theme-thindark": "^1.0.1"
+  }
+}
