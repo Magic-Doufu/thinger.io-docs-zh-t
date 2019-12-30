@@ -2,7 +2,7 @@
 
 >本文件將介紹如何使用RESTful API與Thinger.io伺服器後端進行互動。
 
-若您並未自行建立私人Thinger伺服器\(暫時並不提供\)，則預設伺服器 {root_url}如下：
+本文件中描述的所有示範都基於相對路徑定義URL，假設主機未被設定為您自行建立的伺服器IP、網域，則預設伺服器如下：
 
 ```
 https://api.thinger.io
@@ -12,9 +12,9 @@ https://api.thinger.io
 
 ## 驗證API
 
-### REST API Authentication
+### REST API 驗證
 
-若想要存取伺服器上的API，皆需要透過Oauth進行簽名驗證。因此，所有API存取動作都要包含一個存取令牌的 Authorization 標頭：
+若想要存取伺服器上的API，皆需要透過Oauth進行簽名驗證。因此，所有API存取動作都要包含一個存取令牌的 `Authorization` 標頭：
 
 ``` text
 Bearer {your_token}
@@ -30,7 +30,7 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODYwNDkxNTcsImlhdCI6MTQ4
 本服務使用的Token格式為JWT，token內容可使用jwt-decoder解析。
 :::
 
-存取令牌有兩個不同的概念：使用使用者憑據、刷新令牌取得，或是直接由使用者定義。
+存取令牌有兩個不同的概念：使用使用者憑據、刷新令牌取得動態存取令牌，或是直接由使用者定義。
 
 #### 存取令牌\(Access Token\)
 
@@ -45,6 +45,7 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODYwNDkxNTcsImlhdCI6MTQ4
 此種令牌用於刷新並取得存取令牌，本身不提供存取使用者資源的權限，使用刷新令牌時其本身也會刷新。將刷新令牌儲存於安全區域，即使存取令牌以某種方式洩漏，攻擊者也無法長時間存取裝置。若刷新令牌也遭洩漏，可以手動註銷刷新令牌以阻止被取得新的刷新令牌，中止非預期的存取。
 
 本平台身分驗證的設計模式為：透過帳號密碼進行初次身分驗證，同時取得刷新令牌與存取令牌。
+刷新令牌有效期限(Expiration time)為 2 個月。並且您使用它時也會進行刷新。之後皆使用存取令牌存取API，並於刷新令牌過期前，使用刷新令牌更新並同時取得存取令牌與刷新令牌。
 
 ::: tip
 刷新令牌有效期限(Expiration time)為 2 個月。並且您使用它時也會進行刷新。之後皆使用存取令牌存取API，並於刷新令牌過期前，使用刷新令牌更新並同時取得存取令牌與刷新令牌。

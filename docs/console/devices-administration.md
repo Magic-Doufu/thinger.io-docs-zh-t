@@ -13,7 +13,7 @@ This section will list your registered devices and will show some information ab
 
 ![](~@cloud/DeviceList.png)
 
-如果這是您第一次訪問Thinger.io，此列表應為空。我們接下來將向您展示如何創建您的第一個裝置。
+如果這是您第一次造訪Thinger.io，此列表應為空。我們接下來將向您展示如何創建您的第一個裝置。
 
 首先，單擊**Add Device**，這將打開一個表單，您可以在其中輸入`裝置ID`與`憑證`。並從下拉列表中選擇**Device Type**，選擇以下之一類型：
 

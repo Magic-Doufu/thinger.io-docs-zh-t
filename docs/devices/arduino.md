@@ -6,7 +6,7 @@
 
 本文件與Thinger.io平台的Arduino客戶端程式庫版本相關。使用此程式庫，您可以使用乙太網，Wifi，GSM連接任何Arduino開發板或其他相容的開發板（如ESP8266，NodeMCU和TI CC3200）。
 
-客戶端程式庫允許將您的IoT裝置連接到[Thinger.io](http://thinger.io)雲端平台。這是專為Arduino IDE設計的程式庫，因此您可以在幾分鐘內輕易的對裝置編寫程式建立出`Input`與`Output`資源以連接它們。
+客戶端程式庫允許將您的IoT裝置連接到[Thinger.io](http://thinger.io)雲端平台。這是專為Arduino IDE設計的程式庫，因此您可以在幾分鐘內輕易的對裝置程式設計建立出`Input`與`Output`資源以連接它們。
 
 當數據上線，即可顯示於儀表板上、儲存在數據儲存桶(data bucket)中或透過端點發送給第三方服務。
 

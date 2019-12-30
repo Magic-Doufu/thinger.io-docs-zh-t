@@ -5,14 +5,14 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
-  base: '',
+  base: '/thinger.io-docs-zh-t/',
   markdown: {
     lineNumbers: false
   },
   theme: 'thindark',
   themeConfig: {
     nav:[
-      {text: '傳產工業4.0協作企劃', link: '/industry4.0/' },
+      //{text: '傳產工業4.0協作企劃', link: '' },
       {text: '原文文檔', link: 'https://docs.thinger.io/' }
     ],
     sidebar:[
@@ -36,7 +36,7 @@ module.exports = {
             ['/console/devices-administration', '裝置管理'],
             ['/console/buckets', '數據儲存桶'],
             ['/console/endpoints', '端點'],
-            //['/thinger.io/console/dashboard', '儀表板'],
+            ['/console/dashboards', '儀表板'],
             ['/console/file-system', '檔案系統'],
             ['/console/access-tokens', '存取令牌']
           ]
@@ -48,8 +48,10 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
+        '@assets': './assets/',
         '@overview': './assets/Overview',
         '@arduino': '../assets/Arduino',
+        '@sigfox': '../assets/Sigfox',
         '@linux': '../assets/Linux',
         '@coding': './assets/Coding',
         '@cloud': '../assets/Cloud',

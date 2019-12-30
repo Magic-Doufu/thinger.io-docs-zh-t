@@ -3,7 +3,7 @@
 ::: tip
 本頁面是基於[Thinger.io說明文件](https://docs.thinger.io)進行翻譯的，內容進度或多或少會有不同。確切取決於官方文件進度或翻譯進度。
 本頁面採用[vuepress](https://vuepress.vuejs.org/)進行建置。
-翻譯的檔案放置於[這個REPO](https://github.com/Magic-Doufu/Docs/tree/gh-pages/thinger.io_cht)，官方原文檔案則位於[此](https://github.com/thinger-io/Docs)處。
+翻譯的檔案放置於[這個REPO](https://github.com/Magic-Doufu/thinger.io-docs-zh-t)，官方原文檔案則位於[此](https://github.com/thinger-io/Docs)處。
 :::
 
 >Thinger.io 是物聯網的開源平台。該文檔可幫助您了解如何在幾分鐘內使用每個組件建立出色的項目。
@@ -132,7 +132,7 @@ Thinger.io平台可以使用**插件(plugin)**來擴充其他網際網路服務�
 
 [Thinger.io本身與硬體並無直接關聯，所以其允許連接基於任何製造商、硬體架構、網路技術或作業系統的電子裝置。此節內容為使用我們提供的程式庫或使用Thinger.io API與HTTP查詢發送數據來解釋如何連接常見的裝置。](/devices/)
 
-## [客戶端程式撰寫](/coding/)
+## [客戶端程式設計](/coding/)
 
 本節將介紹如何向裝置新增不同的功能，以公開資源，調用端點或讀取基於Websocket實現的即時數據串流。
 

@@ -54,7 +54,7 @@ void loop() {
 
 安裝程式庫後，您就可以輕鬆地從一些預設範例開始工作。
 
-![](/assets/Thinger.io/Arduino/LibExample.jpg)
+![](~@assets/Arduino/LibExample.jpg)
 
 > 建議您從thinger.io程式庫提供的範例開始工作。
 
@@ -66,7 +66,7 @@ void loop() {
 - `deviceId`
 - `deviceCredential`
 
-當您[在控制台中建立裝置](/thinger.io/console)時，基本上是在建立一個新的`Device Id`並設定`Device Credential`。
+當您[在控制台中建立裝置](./console/devices-administration/#-建立裝置)時，基本上是在建立一個新的`Device Id`並設定`Device Credential`。
 因此您需要在給裝置的Arduino程式中加入您所提供的同一組驗證資訊，以讓伺服端可以識別裝置並與帳戶進行關聯。此行為通常在`thing`物件被實體化時完成。
 
 因此，將範例中的`username`,`deviceId`和`deviceCredential`替換為您在雲端中註冊時的資訊吧：
@@ -668,7 +668,7 @@ ThingerSmartConfig thing(USERNAME,
 ## 連接故障排除指南
 
 在極少數的情況下，可能會導致軟體客戶端故障，妨礙與IoT平台的連接或使其變得不穩定。但是Thinger.io客戶端已經提供了一些工具來檢測和避免此類問題。
-如果最近編寫程式的裝置在Thinger.io伺服器上顯示為 "online" 甚至被鎖定，`_DEBUG_` 指令可以幫助您識別問題。 參照[DEBUG](./#開啟偵錯輸出)。
+如果最近程式設計的裝置在Thinger.io伺服器上顯示為 "online" 甚至被鎖定，`_DEBUG_` 指令可以幫助您識別問題。 參照[DEBUG](./#開啟偵錯輸出)。
 
 下一個列表顯示了主要問題並提供針對每個問題的解決方案
 
