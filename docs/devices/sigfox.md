@@ -57,7 +57,7 @@ Data Source需要設置From Write Call，因為Sigfox裝置不會直接連接到
 
 ![](~@sigfox/create_sigfox_token.png)
 
-填寫表單後，只需單擊"Add Bucket"即可建立令牌。此時將出現令牌值。在我們的例子中，產生的令牌如下。保留此令牌，因為它將在Sigfox端使用。
+填寫表單後，只需點擊"Add Bucket"即可建立令牌。此時將出現令牌值。在我們的例子中，產生的令牌如下。保留此令牌，因為它將在Sigfox端使用。
 
 ```
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJTbWFydEV2ZXJ5dGhpbmciLCJ1c3IiOiJhbHZhcm9sYiJ9.0Qb48c_ToBiIVcCOdvXU2Kn51mTnGLDcN44shVRzNls
@@ -74,8 +74,8 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJTbWFydEV2ZXJ5dGhpbmciLCJ1c3IiOiJ
 要在Sigfox中建立回調，請按照以下步驟操作：
 
 1. 前往 [https://backend.sigfox.com](https://backend.sigfox.com) 並登錄您的帳戶。我們假設您已經在平台上註冊了您的裝置。
-2. 點擊`Device Type`頂部的選項卡，然後單擊要設定的裝置類型名稱。或者，您可以切換到`Device`選項卡，然後單擊裝置的`Device type`。
-3. 於左側選單單擊`Callbacks`，然後進行新增。
+2. 點擊`Device Type`頂部的選項卡，然後點擊要設定的裝置類型名稱。或者，您可以切換到`Device`選項卡，然後點擊裝置的`Device type`。
+3. 於左側選單點擊`Callbacks`，然後進行新增。
 
 在此步驟中，您需要選擇要建立`Custom Callback`的埠口，因為我們需要調用Sigfox後端不直接支援的端點。
 
@@ -415,7 +415,7 @@ void loop() {
 
 ![](~@sigfox/sigfox_messages.png)
 
-這裡有趣的是檢查我們的回調響應是否成功，因為回調圖示會根據結果從綠色變為紅色。在我們的例子中，我們的回調是綠色的，所以請求沒問題。您可以單擊該圖示以檢視伺服器響應，即HTTP響應200 OK 。
+這裡有趣的是檢查我們的回調響應是否成功，因為回調圖示會根據結果從綠色變為紅色。在我們的例子中，我們的回調是綠色的，所以請求沒問題。您可以點擊該圖示以檢視伺服器響應，即HTTP響應200 OK 。
 
 ![](~@sigfox/sigfox_callback_response.png)
 

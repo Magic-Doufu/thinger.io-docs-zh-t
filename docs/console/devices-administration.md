@@ -15,7 +15,7 @@ This section will list your registered devices and will show some information ab
 
 如果這是您第一次造訪Thinger.io，此列表應為空。我們接下來將向您展示如何創建您的第一個裝置。
 
-首先，單擊**Add Device**，這將打開一個表單，您可以在其中輸入`裝置ID`與`憑證`。並從下拉列表中選擇**Device Type**，選擇以下之一類型：
+首先，點擊**Add Device**，這將打開一個表單，您可以在其中輸入`裝置ID`與`憑證`。並從下拉列表中選擇**Device Type**，選擇以下之一類型：
 
 * Generic device: 適用於裝有Thinger.io客戶端的裝置。例如Raspberry Pi，Linux或Arduino裝置。
 * HTTP device: 此選項允許您在沒有完全集成的情況下從第三方平台和商業裝置中取得數據以進行資訊處理。 
@@ -50,7 +50,7 @@ This section will list your registered devices and will show some information ab
 
 ![](~@cloud/DeviceAndCode.png)
 
-一旦我們在程式中建立了我們的帳戶ID，裝置ID和裝置憑證，我們就可以編譯並上傳程式。同時，我們只需在裝置列表中單擊其ID即可在雲控制台中打開我們的裝置。在裝置畫面中，您將能夠即時檢視有關裝置的一些資訊，例如IP位址，連接狀態或發送/接收的資訊。預設情況下，我們的裝置將顯示為已中斷連接，如下圖所示。
+一旦我們在程式中建立了我們的帳戶ID，裝置ID和裝置憑證，我們就可以編譯並上傳程式。同時，我們只需在裝置列表中點擊其ID即可在雲控制台中打開我們的裝置。在裝置畫面中，您將能夠即時檢視有關裝置的一些資訊，例如IP位址，連接狀態或發送/接收的資訊。預設情況下，我們的裝置將顯示為已中斷連接，如下圖所示。
 
 ![](~@cloud/DeviceExplorerOffline.png)
 
@@ -64,7 +64,7 @@ This section will list your registered devices and will show some information ab
 
 Thinger.io平台的一個很酷的功能是，它可以探索裝置中定義的資源。資源可以是傳感器讀數，如溫度，濕度或壓力。也可以是任何可操作的元素，如燈，繼電器或電動機。一般來說，任何裝置資源都像一個可以通過Rest API依照需求調用的回調函數。通過這種方式，本節將介紹如何通過雲控制台與裝置資源進行互動，同時您亦將了解如何調用自己的REST API來存取資源。
 
-將裝置連接到帳戶後，如上一節所述，您可以存取其資源並使用`API EXPLORER`探索`API Rest`端點。您可以通過單擊名為`Device API`的藍色小按鈕，在`DEVICE`頁中存取此畫面。
+將裝置連接到帳戶後，如上一節所述，您可以存取其資源並使用`API EXPLORER`探索`API Rest`端點。您可以通過點擊名為`Device API`的藍色小按鈕，在`DEVICE`頁中存取此畫面。
 
 在API資源管理器界面中，您將看到許多不同的框列出程式中定義的每個資源。每個資源都有一個ID，該ID與程式中定義的資源名稱相關。
 
@@ -97,11 +97,11 @@ thing["in_out"] = [](pson& in, pson& out){
 };
 ```
 
-此資源定義將轉換為平台中的以下資源，其既可以測試輸入值，也可以檢視輸出結果。因此，您可以嘗試輸入一些值，單擊`Run`，然後檢視裝置回報的輸出。此範例還強調資源如何工作，因為它們不僅僅是靜態值，而是可以使用任何輸入或輸出值調用的回調。
+此資源定義將轉換為平台中的以下資源，其既可以測試輸入值，也可以檢視輸出結果。因此，您可以嘗試輸入一些值，點擊`Run`，然後檢視裝置回報的輸出。此範例還強調資源如何工作，因為它們不僅僅是靜態值，而是可以使用任何輸入或輸出值調用的回調。
 
 ![](~@cloud/InOutResource.png)
 
-除了可以與裝置互動的有用裝置API資源管理器之外，您還可以通過單擊`Show Query`按鈕取得有關REST API端點的特定資訊。它提供方法(method)、URL、內容類型(ContentType)、請求內容(Request Body)和響應內容(Response Body)等資訊。您也可以點擊`Curl`直接複製產生的指令與裝置進行互動。
+除了可以與裝置互動的有用裝置API資源管理器之外，您還可以通過點擊`Show Query`按鈕取得有關REST API端點的特定資訊。它提供方法(method)、URL、內容類型(ContentType)、請求內容(Request Body)和響應內容(Response Body)等資訊。您也可以點擊`Curl`直接複製產生的指令與裝置進行互動。
 
 上面的範例轉換為以下REST API調用：
 
@@ -117,7 +117,7 @@ thing["in_out"] = [](pson& in, pson& out){
 
 ![](~@cloud/CallbackDetails.png)
 
-此內容顯示了可以通過使用回調從伺服器請求的不同功能，只需單擊複選框並選擇將接收數據的資源，例如：
+此內容顯示了可以通過使用回調從伺服器請求的不同功能，只需點擊複選框並選擇將接收數據的資源，例如：
 
 * 將數據存儲至可縮放的[數據桶]中(http://docs.thinger.io/console/#data-buckets)
 * 調用[端點設定檔](http://docs.thinger.io/console/#endpoints)與第三方結合
@@ -126,7 +126,7 @@ thing["in_out"] = [](pson& in, pson& out){
 請注意，無法通過回調新增屬性，數據儲存桶或端點，因此必須先於Web控制台或REST API進行建立
 
 您已設定了回調詳細資訊，系統將準備接收請求。
-與已連接裝置的儀表板中包含的"show query"功能類似，您可以通過單擊`Callback Details`內的"overview"或"cURL Example"選項來找到HTTP請求結構的精確規範和完整的cURL範例。
+與已連接裝置的儀表板中包含的"show query"功能類似，您可以通過點擊`Callback Details`內的"overview"或"cURL Example"選項來找到HTTP請求結構的精確規範和完整的cURL範例。
 
 內容如下圖所示：
 
@@ -148,7 +148,7 @@ https://<Thinger_Server>/v3/users/<Username>/devices/<Device_ID>/callback?author
 
 ![](~@cloud/AddDeviceToken.png)
 
-接著單擊右側綠色的`Add`按鈕，會出現一個視窗，您可以設定不同的參數：
+接著點擊右側綠色的`Add`按鈕，會出現一個視窗，您可以設定不同的參數：
 
 * Token name: 使用代表名稱來記住令牌的發布原因，即IFTTT Access，手機等。
 * Token access: 設定令牌以允許存取或限制對裝置資源的存取。

@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "markdown-it-task-lists": "^2.1.1",
     "vuepress-plugin-element-tabs": "https://github.com/Magic-Doufu/vuepress-plugin-tabs/tarball/master"
   },
   "devDependencies": {

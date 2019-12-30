@@ -4,7 +4,7 @@
 
 ## 建立儲存桶
 
-要建立數據儲存桶，您需要單擊選單中的`Data Buckets`進行存取：
+要建立數據儲存桶，您需要點擊選單中的`Data Buckets`進行存取：
 
 ![](~@cloud/MenuBuckets.jpg)
 

@@ -6,11 +6,11 @@
 
 ## 建立端點
 
-要管理所有端點，您需要單擊選單中的`Endpoints`進行存取：
+要管理所有端點，您需要點擊選單中的`Endpoints`進行存取：
 
 ![](~@cloud/MenuEndpoints.jpg)
 
-然後單擊`Add Endpoint`按鈕，該按鈕將打開一個新界面以輸入端點詳細資訊，如以下畫面截圖所示：
+然後點擊`Add Endpoint`按鈕，該按鈕將打開一個新界面以輸入端點詳細資訊，如以下畫面截圖所示：
 
 ![](~@cloud/AddEndpoint.png)
 

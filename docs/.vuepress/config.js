@@ -7,6 +7,9 @@ module.exports = {
   ],
   base: '/thinger.io-docs-zh-t/',
   markdown: {
+    extendMarkdown: md => {
+      md.use(require('markdown-it-task-lists'))
+    },
     lineNumbers: false
   },
   theme: 'thindark',
@@ -41,7 +44,9 @@ module.exports = {
             ['/console/access-tokens', '存取令牌']
           ]
       },
-      ['/api', 'API']
+      ['/api', 'API'],
+      ['/server-configuration', '伺服器管理'],
+      ['/deployment', '伺服器部署']
     ],
     sidebarDepth: 2,
   },
@@ -49,6 +54,7 @@ module.exports = {
     resolve: {
       alias: {
         '@assets': './assets/',
+        '@server': './assets/Server',
         '@overview': './assets/Overview',
         '@arduino': '../assets/Arduino',
         '@sigfox': '../assets/Sigfox',

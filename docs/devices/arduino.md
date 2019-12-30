@@ -44,7 +44,7 @@
 
 ![](~@arduino/LibManagerSearch.jpg)
 
-> 搜尋 `thinger.io` ，然後單擊 `Install` 進行安裝。官方發布更新後，您也可以從此管理器更新程式庫。
+> 搜尋 `thinger.io` ，然後點擊 `Install` 進行安裝。官方發布更新後，您也可以從此管理器更新程式庫。
 
 現在，應該可以使用一些程式庫提供的範例。
 

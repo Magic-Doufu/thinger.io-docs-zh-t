@@ -6,13 +6,13 @@
 **筆記：**[此處](http://docs.thinger.io/api/#authentication-api-rest-api-authentication)更詳細地介紹了如何通過API使用存取令牌。
 :::
 
-單擊選單中的`Access Tokens`部分，即可輕鬆管理所有令牌。
+點擊選單中的`Access Tokens`部分，即可輕鬆管理所有令牌。
 
 ![](~@cloud/MenuAccessTokens.jpg)
 
 ## 建立令牌設定檔(Access Token Profile)
 
-單擊綠色`Add Token`按鈕將打開新界面以輸入端點詳細資訊，如以下畫面截圖所示：
+點擊綠色`Add Token`按鈕將打開新界面以輸入端點詳細資訊，如以下畫面截圖所示：
 
 ![](~@cloud/AddToken.png)
 

@@ -37,7 +37,7 @@ Thinger.io為一開源物聯網平台專案，它提供了每個所需的工具�
 
 ### 1. 建立裝置
 
-使用 `Devices` 選單選項卡，只需單擊 `New device` 按鈕，然後在表格中填寫所需的 `device ID(裝置ID)`、`description(說明)` 和 `Credentials(憑證)`。
+使用 `Devices` 選單選項卡，只需點擊 `New device` 按鈕，然後在表格中填寫所需的 `device ID(裝置ID)`、`description(說明)` 和 `Credentials(憑證)`。
 
 ![](~@overview/guideDevice.png)
 
@@ -84,7 +84,7 @@ Thinger.io為一開源物聯網平台專案，它提供了每個所需的工具�
 
 ---
 
-通過選單中的`Device`頁面可以顯示完整的裝置列表。該介面允許管理裝置並檢查其連接狀態並通過單擊每個`Device ID`來存取`Device Dashboard`。
+通過選單中的`Device`頁面可以顯示完整的裝置列表。該介面允許管理裝置並檢查其連接狀態並通過點擊每個`Device ID`來存取`Device Dashboard`。
 
 
 ### 3.管理裝置與數據
