@@ -80,7 +80,7 @@
 ![](~@cloud/IoT-data-aggregation-after.png)
 
 ::: warning
-請注意，只有在具有**InfluxDB** 的"私有伺服器"中，才能使用**Data Aggregation**系統 
+請注意，只有在具有**InfluxDB** 的"私有伺服器"中，才能使用**Data Aggregation**系統。
 :::
 
 ### 指針表(Tachometer Chart)
@@ -89,7 +89,7 @@
 
 ![](~@cloud/IoT-tachometer.png)
 
-可設定參數如下
+可設定參數如下：
 
 ![](~@cloud/IoT-tachometer-configure.png)
 
@@ -198,7 +198,7 @@ Then, the Led indicator menu tab allows selecting the data source, that can be a
 
 ![](~@cloud/GoogleMap.png)
 
-以下是此小工具與連接裝置即時協作的示例：
+以下是此小工具與連接裝置即時協作的範例：
 
  [![Real-Time GPS location over GPRS using IoT Solution](https://img.youtube.com/vi/3QDDOPMg22g/0.jpg)](https://www.youtube.com/watch?v=3QDDOPMg22g)
 
@@ -273,7 +273,7 @@ text/value 小工具是一個有用的小工具，用於顯示任意數據，特
 
 On / Off小工具允許控制連接裝置的布爾狀態，例如打開/關閉燈，電機，繼電器或任何其他元件。裝置應該披露一個布爾輸入，就像控制led的那些例子一樣。然後將資源映射到此小工具即可即時更改裝置狀態。如果正確定義了[輸入資源屬性](http://docs.thinger.io/arduino/#coding-adding-resources-input-resources)，這個小工具也能顯示目前裝置狀態。
 
- ![](~@cloud/SwitchButton.png)
+![](~@cloud/SwitchButton.png)
 
 可設定的參數如下：
 

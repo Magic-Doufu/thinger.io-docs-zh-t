@@ -9,7 +9,6 @@
 ![](~@cloud/MenuDevice.jpg)
 
 此部分將列出您註冊的裝置，並顯示有關連接狀態的一些資訊。類似於下圖的畫面。
-This section will list your registered devices and will show some information about its connection. Something similar to the following picture.
 
 ![](~@cloud/DeviceList.png)
 
@@ -132,13 +131,13 @@ thing["in_out"] = [](pson& in, pson& out){
 
 ![](~@cloud/CallbackOverview.png)
 
-最後，要進行一個具回調功能的HTTP請求，必須將`Authorization Header`加入至請求中。如以下示例所示：
+最後，要進行一個具回調功能的HTTP請求，必須將`Authorization Header`加入至請求中。如以下範例所示：
 
 ```
 https://<Thinger_Server>/v3/users/<Username>/devices/<Device_ID>/callback?authorization=<Authorization_Header>
 ```
 
-## 裝置令牌
+## 裝置令牌\(Device Tokens\)
 
 所有與您連接的裝置的互動，即使用上面評論的REST API端點或智慧手機，都需要針對平台進行身份驗證。預設情況下，當您通過[Thinger.io](http://thinger.io/)控制台與裝置進行互動時，您將使用從使用者名和密碼獲取的存取令牌隱式地將所有請求簽核到平台。這種授權允許您存取所有的帳戶資源，因此您可以設定裝置，數據儲存桶等。但此授權經常過期（將由瀏覽器自動續約），並且不能用於其他我們授予裝置存取權限的使用者或平台，因為您將提供對所有帳戶的存取權限。
 
@@ -158,24 +157,21 @@ https://<Thinger_Server>/v3/users/<Username>/devices/<Device_ID>/callback?author
 
 ![](~@cloud/addTockenForm.png)
 
-保存令牌後，界面將顯示要在REST API調用中使用的存取令牌，如下圖所示。如果您需要幫助以在REST API調用中集成此存取令牌，請檢視[此文件](http://docs.thinger.io/api/#authentication-api-rest-api-authentication)。
+令牌此時已經保存，界面將顯示要在REST API調用中使用的存取令牌，如下圖所示。如果您需要幫助以在REST API調用中集成此存取令牌，請檢視[此文件](http://docs.thinger.io/api/#authentication-api-rest-api-authentication)。
 
 ![](~@cloud/device_token_value.png)
 
 ## 裝置屬性
 
-此處提供了一種簡單的方法來存儲與裝置有關的特定資訊，例如位置，ID或是裝置可能使用通用Json文件查詢到的配置參數。這樣，平台可以用作裝置的持久性內存。要創建裝置屬性，請打開裝置儀表板，然後查看名為“屬性”的小節。
-[Thinger.io](http://thinger.io/) provides a simple way to store additional information related to an specific device, such as location, identificators or even configuration parameters that may be retrieved by devies using comon Json files. On this way, the platform can be used as devices persistent memory. To create a device property, open the device Dashboard and take a look to the subsection called "Properties".
+此處提供了一種簡單的方法來存儲與裝置有關的特定資訊，例如位置，ID或是裝置可能使用通用Json文件查詢到的配置參數。這樣，平台可以用作裝置的持久性內存。要創建裝置屬性，請打開裝置儀表板，然後查看名為“屬性”的小節。\
 
 ![](~@cloud/DeviceProperties.png)
 
-此菜單提供了一種創建，管理或刪除裝置屬性的簡便方法。請注意，在此示例中創建的屬性指定了裝置位置。[Thinger.io]（http://thinger.io/）系統設計用於檢測此配置，並自動將其表示在裝置儀表板上。
-This menu provides an easy way to create, manage or delete devices properties. Note that the property created in this example is specifying the device location. [Thinger.io](http://thinger.io/) system has been designed to detect this configuration and automatically represent it on the device dasboard map.
+此選單提供了一種建立，管理或刪除裝置屬性的簡便方法。請注意，在此範例中建立的屬性指定了裝置位置。[Thinger.io](http://thinger.io/)系統被設計為會自動偵測此設定，並將其表示在裝置儀表板地圖上。
 
 ![](~@cloud/AddDeviceProperty.png)
 
-屬性聲明和修改是通過特殊的上下文進行的，該上下文提供了json驗證器，可增強文本並檢查錯誤。
-Properties declarations and modifications are made by means of a special context, provided with a json validator that enhances the text and check morfologic mistakes.
+屬性聲明和修改是通過特殊的內容進行的，該內容提供了json驗證器，可以增強模式檢查文本中的型別錯誤。
 
 ### 在程式碼中使用屬性
 

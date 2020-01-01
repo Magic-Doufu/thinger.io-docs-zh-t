@@ -2,8 +2,6 @@
 
 ## 總覽
 
-它還支援其他開發板，如ESP8266（或NodeMCU），TI CC3200
-
 本文件與Thinger.io平台的Arduino客戶端程式庫版本相關。使用此程式庫，您可以使用乙太網，Wifi，GSM連接任何Arduino開發板或其他相容的開發板（如ESP8266，NodeMCU和TI CC3200）。
 
 客戶端程式庫允許將您的IoT裝置連接到[Thinger.io](http://thinger.io)雲端平台。這是專為Arduino IDE設計的程式庫，因此您可以在幾分鐘內輕易的對裝置程式設計建立出`Input`與`Output`資源以連接它們。
@@ -12,7 +10,7 @@
 
 ![](~@arduino/thingerio-architecture.png)
 
-此平台能夠支援多種網路接口，如Ethernet Shield，Wifi Shield和GSM。其對Arduino IDE的版本要求為>=1.6.3。
+此平台能夠支援多種網路接口，如Ethernet Shield，Wifi Shield和GSM它還支援其他開發板，如ESP8266（或NodeMCU），TI CC3200。其對Arduino IDE的版本要求為>=1.6.3。
 
 ## 安裝
 

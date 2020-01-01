@@ -10,7 +10,8 @@
 
 ## Thinger.io 是什麼?
 
-Thinger.io為一開源物聯網平台專案，它提供了每個所需的工具，可以以非常簡單的方式對連接的產品進行原型設計，擴展和管理。其提供了控制面板、資料可視化處理、Google map、資料串流、REST API、API Explorer、開發板框架等資源，並且整合Arduino IDE，讓創客與學生甚至非IT類業界人員皆可以快速上手。其開發框架只要開發板能夠支援Arduino IDE，幾乎都可以連上雲端平台。(但團隊仍建議ESP32，其性價比相對其他開發板高出許多。)
+Thinger.io為一開源物聯網平台專案，它提供了每個原型設計所需的工具，可以以非常簡單的方式對連接的產品進行原型設計，擴展和管理。我們的目標是使物聯網的使用在全世界被平民化，並簡化大型專案開發流程。
+其提供了控制面板、資料可視化處理、Google map、資料串流、REST API、API Explorer、開發板框架等資源，並且整合Arduino IDE，讓創客與學生甚至非IT類業界人員皆可以快速上手。其開發框架只要開發板能夠支援Arduino IDE，幾乎都可以連上雲端平台。(但團隊仍建議ESP32，其性價比相對其他開發板高出許多。)
 
 * **免費的雲端平台：** Thinger.io提供了學習與進行原型設計只有很少限制的終身免費帳戶，當產品準備好要拓展時即可快速大量部署。(大量部署非使用自己建立的平台則需要付費)
 * **簡潔有力：** 只需要幾行程式即可連接裝置並開始使用我們基於Web的控制台讀取數據或控制其功能，從而能夠以簡單的方式連接和管理數千個裝置。
@@ -53,7 +54,7 @@ Thinger.io為一開源物聯網平台專案，它提供了每個所需的工具�
 
 ![](~@overview/editInfo.png)
 
-可以修改此示例，以使裝置行為適應每個用例。 修改原始碼後，只需上傳草稿碼並等待裝置連接即可。
+可以修改此範例，以使裝置行為適應每個用例。 修改原始碼後，只需上傳草稿碼並等待裝置連接即可。
 
 ::: tip 在下一部分中找到有關Thinger.io裝置的額外資訊：
 1. [**與 Arduino 和 Linux 相容的裝置**](/devices/)
@@ -72,7 +73,7 @@ Thinger.io為一開源物聯網平台專案，它提供了每個所需的工具�
 
 :::
 
-::: tab Sigfox / LoRaWAN devices
+::: tab Sigfox / LoRaWAN 裝置
 任何單獨的Sigfox或LoraWAN裝置只需要將HTTP裝置回調設定到其回調管理器中，都可以使用我們的API作為HTTP裝置進行結合，但如果要使用這些技術建立TTN(物聯網間網路)，則最好使用我們發布的插件：
 
 [Sigfox](/plugins/sigfox)
@@ -95,7 +96,7 @@ Thinger.io為一開源物聯網平台專案，它提供了每個所需的工具�
 
 Thinger.io提供了雙向通訊，因此可以使用 **devices output resources \(裝置輸出資源\)** 將數據讀取至伺服器中，也可以將資訊傳遞到 **devices input resources \(裝置輸入資源\)** 裡。這兩種資源在`Device API(裝置 API)`中皆可表示。
 
-![Input &amp; Output resources in the device API inspector](~@overview/guideDeviceAPIExplorer.png)
+![在API檢測器中的輸入 &amp; 輸出資源](~@overview/guideDeviceAPIExplorer.png)
 
 ### 4.存儲、顯示和共享數據
 

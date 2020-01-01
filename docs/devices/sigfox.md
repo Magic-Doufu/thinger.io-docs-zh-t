@@ -6,7 +6,7 @@
 
 Sigfox是一家成立於2009年的法國公司，其建立無線網絡以連接電表、智慧手錶和洗衣機等低功耗物體，這些物體需要不斷的發射少量數據。Sigfox採用專有技術，使用工業、科學和醫療的ISM無線頻段進行通訊，該無線頻段在歐洲使用868MHz，在美國使用902MHz。它使用超窄頻技術，可以在極低電力消耗下覆蓋大範圍區域，也因此這種網路被稱為"低功率廣域網（LPWAN）"。該網路基於單跳(single-hop)星型拓撲，需要ISP承載其產生的流量。該訊號還可用於輕鬆覆蓋大面積區域與位於地下的物體。
 
-Sigfox與LPWAN行業的許多公司合作，如德州儀器公司或Silicon Labs公司。ISM無線頻段支援雙向通訊。現有的Sigfox通訊標準每天最多支援140個上傳訊息，每個訊息可以承載12字節的payload（不包括訊息表頭和傳輸資訊）和每天最多4個下載訊息，每個訊息可以承載8個字節的 payload。如果您想了解有關Sigfox的更多詳細資訊，請造訪[Sigfox Developer Portal](http://makers.sigfox.com/about/)。
+Sigfox與LPWAN行業的許多公司合作，如德州儀器公司或Silicon Labs公司。ISM無線頻段支援雙向通訊。現有的Sigfox通訊標準**每天最多支援140個上傳訊息**，每個訊息可以承載**12字節**的payload（不包括訊息表頭和傳輸資訊）和每天最多4個下載訊息，每個訊息可以承載8個字節的 payload。如果您想了解有關Sigfox的更多詳細資訊，請造訪[Sigfox Developer Portal](http://makers.sigfox.com/about/)。
 
 本文檔將介紹如何將SigFox裝置及其數據結合到Thinger.io平台。在第一步中，我們將回顧如何設定Thinger.io資源，然後在Sigfox方面，我們將設定與平台的通訊以推送我們的傳感器數據。
 
@@ -28,11 +28,6 @@ Sigfox與LPWAN行業的許多公司合作，如德州儀器公司或Silicon Labs
 數據儲存桶用於儲存從Sigfox裝置接收的資訊。因此我們需要建立一個數據儲存桶來存儲我們的Sigfox裝置中的資訊。我們可以使用一個數據儲存桶存儲來自多個裝置的數據，但最好是每個裝置使用一個數據儲存桶。這樣，我們就可以透過建立儀表板，顯示來自每個裝置或感測實體的儲存桶時間序列數據。
 
 然後，打開雲控制台中的`Buckets`部分，並建立一個新的`Data Bucket`。我們需要填寫一些細節，例如：
-Bucket Id，您帳戶中的唯一儲存桶ID，稍後將與Sigfox集成使用。此範例中的標識符將是`SmartEverything`。保留此標識符，因為它將在Sigfox端使用。
-Bucket Name，可以用作標識符的更加使用者友好的表示。
-Bucket Description，我們可以放置任何我們想要記住的目的。
-Enabled，這需要是真的允許桶寫。
-Data Source需要設置From Write Call，因為Sigfox裝置不會直接連接到平台，而是通過REST API接口推送數據。
 
 1. `Bucket Id`, 您帳戶中的唯一儲存桶ID，稍後與Sigfox結合時使用。此範例中的ID將是`SmartEverything`。保留此ID，因為它將在Sigfox端使用。
 2. `Bucket Name`, 比ID的更加易記的標示。
@@ -129,7 +124,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJTbWFydEV2ZXJ5dGhpbmciLCJ1c3IiOiJ
 
 #### Arduino MKRFOX1200
 
-Arduino MKRFOX1200旨在為尋求為項目中加入SigFox連接的製造商提供實用且經濟高效，同時具有最少網路成本的解決方案。它基於Microchip SAMD21和ATA8520 SigFox模組。可以使用典型用途的2節AA 1.5V電池運行六個月以上。該設計包括使用兩節1.5V AA或AAA電池或外部5V為電路板供電的能力。
+Arduino MKRFOX1200旨在為尋求為項目中加入SigFox連接的製造商提供實用且經濟高效，同時具有最少網路成本的解決方案。它基於Microchip SAMD21和ATA8520 SigFox模組。可以使用典型用途的2節AA 1.5V電池執行六個月以上。該設計包括使用兩節1.5V AA或AAA電池或外部5V為電路板供電的能力。
 
 ![](~@sigfox/arduino_mkrfox1200.jpeg)
 
@@ -211,7 +206,7 @@ void loop() {
  };
 ```
 
-因此，程式碼最終將如下所示。我們使用Arduino MKRFOX1200和DHT傳感器，提供在Sigfox後端設定的回調所需的溫度和濕度。如果您沒有DHT傳感器，可以嘗試使用電路板的內部溫度傳感器，通過調用SigFox.internalTemperature()，並將濕度值設置為0或任何其他值。
+因此，程式碼最終將如下所示。我們使用Arduino MKRFOX1200和DHT傳感器，提供在Sigfox後端設定的回調所需的溫度和濕度。如果您沒有DHT傳感器，可以嘗試使用電路板的內部溫度傳感器，通過調用`SigFox.internalTemperature()`，並將濕度值設置為0或任何其他值。
 
 ```cpp
  #include <SigFox.h>
@@ -337,7 +332,7 @@ struct data{
 };
 ```
 
-因此，程式碼最終將如下所示。**請注意**，此程式碼尚未針對電池供電的情況進行最佳化。如果需要，可以對裝置啟用省電模式，但這超出了本示例的範圍。
+因此，程式碼最終將如下所示。**請注意**，此程式碼尚未針對電池供電的情況進行最佳化。如果需要，可以對裝置啟用省電模式，但這超出了本範例的範圍。
 
 ```cpp
 #include <Wire.h>
@@ -409,7 +404,7 @@ void loop() {
 
 ## 檢查 Sigfox 的設定
 
-在我們同時執行裝置程式碼，設定Sigfox回調以及建立數據儲存桶之後，我們應該立即檢查所有內容是否已啟動並運行。
+在我們同時執行裝置程式碼，設定Sigfox回調以及建立數據儲存桶之後，我們應該立即檢查所有內容是否已啟動並執行。
 
 我們可以從檢查Sigfox平台是否正在接收我們的訊息開始。只需切換到Sigfox平台後端，然後打開左側面板上`Messages`的部分。我們應該看到類似於以下截圖畫面的內容，其中已收到一些訊息。您還可以檢視正在發送的有效負載（十六進制）以及鏈路品質，時間戳或回調結果等其他訊息。
 

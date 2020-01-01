@@ -1,6 +1,6 @@
 # 存取令牌
 
-可以通過REST API存取所有Thinger.io平台功能，以便將我們的服務作為結合其他項目的後端伺服器。實際上，控制台只是一個與API互動以管理裝置，數據儲存桶，端點，儀表板等的Angular REST客戶端。每個REST API請求必須經過身份驗證才能生效，因此，任何客戶端都需要在每次調用時提供授權。存取令牌是向第三方服務或應用程式提供授權以進行API請求的方式，而無需與其共享使用者名和密碼。此外，通過存取令牌，可以授予對帳戶的特定資源和操作的存取權限，例如讀取特定裝置或寫入自定義數據儲存桶（如[本示例](http://docs.thinger.io/sigfox/#steps-in-thingerio-create-an-access-token)中所示）。
+可以通過REST API存取所有Thinger.io平台功能，以便將我們的服務作為結合其他項目的後端伺服器。實際上，控制台只是一個與API互動以管理裝置，數據儲存桶，端點，儀表板等的Angular REST客戶端。每個REST API請求必須經過身份驗證才能生效，因此，任何客戶端都需要在每次調用時提供授權。存取令牌是向第三方服務或應用程式提供授權以進行API請求的方式，而無需與其共享使用者名和密碼。此外，通過存取令牌，可以授予對帳戶的特定資源和操作的存取權限，例如讀取特定裝置或寫入自定義數據儲存桶（如[本範例](http://docs.thinger.io/sigfox/#steps-in-thingerio-create-an-access-token)中所示）。
 
 ::: tip
 **筆記：**[此處](http://docs.thinger.io/api/#authentication-api-rest-api-authentication)更詳細地介紹了如何通過API使用存取令牌。
@@ -25,12 +25,11 @@
 
 ![](~@cloud/AddUserTokenPermission.png)
 
-填寫完所有參數後，再次按下綠色的`New Access Token`以新增一個存取令牌設定檔。接著授權訊息會出現在如下圖所示的藍色文本框中
+填寫完所有參數後，再次按下綠色的`New Access Token`以新增一個存取令牌設定檔。接著授權訊息會出現在如下圖所示的藍色文本框中。
 
 ![](~@cloud/AddTokenDone.png)
 
-授權訊息可以`bearer`進行身分驗證，這將允許第三方系統使用Thinger.io平台的功能。
-This authorization can be added as bearer auth. to allow a third party system to work with Thinger.io Platform features. 
+授權訊息可以透過將`bearer`加入`authorization`中進行身分驗證，這將允許第三方系統使用Thinger.io平台的功能。
 
 ### 向存取令牌加入授權
 

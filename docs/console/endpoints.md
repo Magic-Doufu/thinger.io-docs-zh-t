@@ -65,6 +65,6 @@ HTTP 端點是一種通用類型的端點，可用於與其他 Web 服務或 Web
 * **Request URL**: 設定方法（GET，POST，PUT，PATCH或DELETE）和欲請求的URL。
 * **Request Headers**: 可以向請求新增標頭，這對於新增授權、暫存控制、設定內容類型等非常有用。
 * **Request Body**: 內文可以是具有特定內容的自定義內文，也可以是具有裝置發送的資訊的 JSON payload。
-在自定義正文中，可以新增自定義變數，如電子郵件示例中所示。這樣，就可以建立不同格式的內容，如XML，SOAP等（請記得在這種情況下新增適當的內容類型\(content-type\)）。
+在自定義正文中，可以新增自定義變數，如電子郵件範例中所示。這樣，就可以建立不同格式的內容，如XML，SOAP等（請記得在這種情況下新增適當的內容類型\(content-type\)）。
 
 ![](~@cloud/HTTPEndpoint.png)
