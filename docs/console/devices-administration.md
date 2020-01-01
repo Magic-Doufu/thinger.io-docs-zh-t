@@ -37,13 +37,13 @@
 
 現在，您可以使用新裝置ID和裝置憑據來連接新裝置。根據您的裝置，您將需要安裝所需的程式庫或開發環境，因此請根據您的裝置簽出以下部分：
 
-{% page-ref page="devices/arduino.md" %}
+<linkref title="Arduino" path="/devices/arduino.md"></linkref>
 
-{% page-ref page="devices/linux.md" %}
+<linkref title="Linux/Raspberry Pi" path="/devices/linux.md"></linkref>
 
 請記住，Sigfox裝置不共享已連接裝置的概念，因為它們預設情況下是定期發送資訊的離線裝置。如果您想存取來自這些裝置的資訊，請檢視以下文件。
 
-{% page-ref page="devices/sigfox.md" %}
+<linkref title="Sigfox" path="/devices/sigfox.md"></linkref>
 
 對於以下範例，我們將使用Arduino IDE和ESP8266裝置，如NodeMCU，在這種情況下，您可以打開ESP8266的範例程式，並填寫裝置詳細資訊：您的使用者名，裝置ID以及建立裝置時建立的裝置憑證。下圖顯示了程式與帳戶中建立的裝置之間的關係。
 
@@ -106,7 +106,7 @@ thing["in_out"] = [](pson& in, pson& out){
 
 ![](~@cloud/ShowQuery.png)
 
-[此處](http://docs.thinger.io/api/#devices-api-access-device-resources).提供了有關與裝置進行交互的API的更多信息。
+[此處](/api.html#%E5%AD%98%E5%8F%96%E8%A3%9D%E7%BD%AE%E8%B3%87%E6%BA%90).提供了有關與裝置進行交互的API的更多信息。
 
 ## HTTP 裝置回調 (Callback)
 
@@ -118,9 +118,9 @@ thing["in_out"] = [](pson& in, pson& out){
 
 此內容顯示了可以通過使用回調從伺服器請求的不同功能，只需點擊複選框並選擇將接收數據的資源，例如：
 
-* 將數據存儲至可縮放的[數據桶]中(http://docs.thinger.io/console/#data-buckets)
-* 調用[端點設定檔](http://docs.thinger.io/console/#endpoints)與第三方結合
-* 使用`Set device property`或`response data`功能檢視或修改[Device Properties](http://docs.thinger.io/api/#Device-properties)。
+* 將數據存儲至可縮放的[數據儲存桶](/console/buckets.html)中
+* 調用[端點設定檔](/console/endpoints.html)與第三方結合
+* 使用`Set device property`或`response data`功能檢視或修改[Device Properties](/api.html#Device-properties)。
 
 請注意，無法通過回調新增屬性，數據儲存桶或端點，因此必須先於Web控制台或REST API進行建立
 

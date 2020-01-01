@@ -8,7 +8,7 @@ Sigfox是一家成立於2009年的法國公司，其建立無線網絡以連接�
 
 Sigfox與LPWAN行業的許多公司合作，如德州儀器公司或Silicon Labs公司。ISM無線頻段支援雙向通訊。現有的Sigfox通訊標準**每天最多支援140個上傳訊息**，每個訊息可以承載**12字節**的payload（不包括訊息表頭和傳輸資訊）和每天最多4個下載訊息，每個訊息可以承載8個字節的 payload。如果您想了解有關Sigfox的更多詳細資訊，請造訪[Sigfox Developer Portal](http://makers.sigfox.com/about/)。
 
-本文檔將介紹如何將SigFox裝置及其數據結合到Thinger.io平台。在第一步中，我們將回顧如何設定Thinger.io資源，然後在Sigfox方面，我們將設定與平台的通訊以推送我們的傳感器數據。
+本文件將介紹如何將SigFox裝置及其數據結合到Thinger.io平台。在第一步中，我們將回顧如何設定Thinger.io資源，然後在Sigfox方面，我們將設定與平台的通訊以推送我們的傳感器數據。
 
 ## 將Sigfox裝置與Thinger.io結合
 
@@ -18,7 +18,7 @@ Sigfox與LPWAN行業的許多公司合作，如德州儀器公司或Silicon Labs
 
 ### **進階結合 \(使用Sigfox插件\)**
 
-{% page-ref page="../plugins/sigfox.md" %}
+<linkref title="Sigfox插件" path="/plugins/sigfox.md"></linkref>
 
 ### 傳統結合 \(無插件\)
 

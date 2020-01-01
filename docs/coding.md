@@ -1,4 +1,4 @@
-# 編寫韌體程式
+# 韌體程式設計
 > 此節內容包含如何使用Thinger.io程式庫簡單的建立適用於裝置的韌體，其中包含輸入與輸出資源、調用端點或基於WebSockets的即時串流等等。
 ## 草圖概述
 一支經典的Arduino程式結構通常長得像這樣，它具有一個`setup()`方法與一個`loop()`方法。
@@ -46,7 +46,7 @@ void loop() {
 }
 ```
 
-::: info
+::: tip
 請記得，不要在`loop()`中加入任何`dalay()`，除非您知道自己在做什麼，像是在您的裝置上使用深度睡眠模式等。
 :::
 
@@ -557,7 +557,7 @@ Thinger.io提供一個易用且富有擴充性的虛擬儲存系統，該系統�
 
 ### 自裝置讀取資源(From Device Resource)
 
-此方式無須編寫特定方法即可使用，因為他們將透過雲端平台自動蒐集資料，僅須建立數據統並設定採樣間隔即可，如控制台文檔所述[http://docs.thinger.io/console/\#data-buckets](http://docs.thinger.io/console/#data-buckets)。
+此方式無須編寫特定方法即可使用，因為他們將透過雲端平台自動蒐集資料，僅須建立數據統並設定採樣間隔即可，如控制台[資料儲存桶](/console/buckets.html#%E8%B3%87%E6%96%99%E5%84%B2%E5%AD%98%E6%A1%B6-data-buckets)文件所述。
 
 ### 串流寫入(Streaming Resource Data)
 

@@ -4,6 +4,8 @@ module.exports = {
   description: 'Thinger.io 中文文件',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-grid.min.css'}],
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css' }],
   ],
   base: '/thinger.io-docs-zh-t/',
   markdown: {
@@ -31,7 +33,7 @@ module.exports = {
             ['/devices/sigfox', 'SIGFOX'],
           ]
       },
-      ['/coding', '編寫程式'],
+      ['/coding', '程式設計'],
       {
           title: '雲端控制台',
           sidebarDepth: 1,

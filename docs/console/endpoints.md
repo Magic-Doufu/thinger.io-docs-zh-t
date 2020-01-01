@@ -34,7 +34,7 @@
 
 ![](~@cloud/EmailEndpoint.png)
 
-有關如何調用端點可參考[此文檔](/thinger.io/coding/#調用端點)基本上需要使用`call_endpoint`方法調用端點，其需要端點ID，在此範例中為`ExampleEmail`，並且要將選擇的數據以`pson`文檔發送到端點，此處的`pson`文檔非常類似於JSON，有兩個鍵(key)分別命名為`temperature`與`humidity`分別儲存DHT傳感器的讀數。以下將示範調用端點。
+有關如何調用端點可參考[此文件](/thinger.io/coding/#調用端點)基本上需要使用`call_endpoint`方法調用端點，其需要端點ID，在此範例中為`ExampleEmail`，並且要將選擇的數據以`pson`文件發送到端點，此處的`pson`文件非常類似於JSON，有兩個鍵(key)分別命名為`temperature`與`humidity`分別儲存DHT傳感器的讀數。以下將示範調用端點。
 
 ```cpp
 pson data;
@@ -43,7 +43,7 @@ data["humidity"] = dht.readHumidity();
 thing.call_endpoint("ExampleEmail", data);
 ```
 
-**注意**: 如果要在電子郵件正文中包含單個值，則可以使用不帶任何鍵的雙括號`{{}}`，並在`pson`使用單個值從裝置發送文檔。如以下結構：
+**注意**: 如果要在電子郵件正文中包含單個值，則可以使用不帶任何鍵的雙括號`{{}}`，並在`pson`使用單個值從裝置發送文件。如以下結構：
 
 ```
 Temperature is: {{}} ºC

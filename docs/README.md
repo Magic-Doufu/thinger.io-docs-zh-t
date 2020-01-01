@@ -3,10 +3,10 @@
 ::: tip
 本頁面是基於[Thinger.io說明文件](https://docs.thinger.io)進行翻譯的，內容進度或多或少會有不同。確切取決於官方文件進度或翻譯進度。
 本頁面採用[vuepress](https://vuepress.vuejs.org/)進行建置。
-翻譯的檔案放置於[這個REPO](https://github.com/Magic-Doufu/thinger.io-docs-zh-t)，官方原文檔案則位於[此](https://github.com/thinger-io/Docs)處。
+翻譯的檔案放置於[這個REPO](https://github.com/Magic-Doufu/thinger.io-docs-zh-t)，官方原文件案則位於[此](https://github.com/thinger-io/Docs)處。
 :::
 
->Thinger.io 是物聯網的開源平台。該文檔可幫助您了解如何在幾分鐘內使用每個組件建立出色的項目。
+>Thinger.io 是物聯網的開源平台。該文件可幫助您了解如何在幾分鐘內使用每個組件建立出色的項目。
 
 ## Thinger.io 是什麼?
 
@@ -76,9 +76,9 @@ Thinger.io為一開源物聯網平台專案，它提供了每個原型設計所�
 ::: tab Sigfox / LoRaWAN 裝置
 任何單獨的Sigfox或LoraWAN裝置只需要將HTTP裝置回調設定到其回調管理器中，都可以使用我們的API作為HTTP裝置進行結合，但如果要使用這些技術建立TTN(物聯網間網路)，則最好使用我們發布的插件：
 
-[Sigfox](/plugins/sigfox)
+<linkref title="Sigfox" path="/plugins/sigfox"></linkref>
+<linkref title="ThingsNetwork" path="/plugins/the-things-network"></linkref>
 
-[ThingsNetwork](/plugins/the-things-network)
 :::
 
 ::::
@@ -127,20 +127,27 @@ Thinger.io提供了三個用於處理裝置數據的基本工具，這些工具�
 
 Thinger.io平台可以使用**插件(plugin)**來擴充其他網際網路服務，只要進入我們的 Marketplace 並選擇它。
 
-[plugins](/plugins/)
+<linkref title="插件" path="/plugins/"></linkref>
 
 ## [相容裝置](/devices/)
 
-[Thinger.io本身與硬體並無直接關聯，所以其允許連接基於任何製造商、硬體架構、網路技術或作業系統的電子裝置。此節內容為使用我們提供的程式庫或使用Thinger.io API與HTTP查詢發送數據來解釋如何連接常見的裝置。](/devices/)
+Thinger.io本身與硬體並無直接關聯，所以其允許連接基於任何製造商、硬體架構、網路技術或作業系統的電子裝置。此節內容為使用我們提供的程式庫或使用Thinger.io API與HTTP查詢發送數據來解釋如何連接常見的裝置。
+
+<linkref title="裝置" path="/devices/"></linkref>
 
 ## [客戶端程式設計](/coding/)
 
+![](~@overview/coding.png)
+
 本節將介紹如何向裝置新增不同的功能，以公開資源，調用端點或讀取基於Websocket實現的即時數據串流。
 
-[![](~@overview/coding.png)](/coding/)
+<linkref title="程式設計" path="/coding/"></linkref>
+
 
 ## [雲端控制台(Cloud Console)](/console/)
 
 雲端控制台與管理介面前端相關，旨在輕鬆管理您的裝置並在雲端中可視化數據。在本部分中，您將學習如何註冊裝置，建立即時儀表板，存取裝置API以及其他管理操作。
 
-[![](~@overview/console.png)](/console/)
+![](~@overview/console.png)
+
+<linkref title="雲端控制台" path="/console/"></linkref>
