@@ -1,5 +1,5 @@
 <template>
-	<a :href="$withBase(path)" class="d-flex py-3 link-ref my-3">
+	<div class="d-flex py-3 link-ref my-3">
 		<div class="flex-shrink-1 d-inline-block align-self-center pl-4">
 			<span class="oi oi-arrow-thick-right"></span>
 		</div>
@@ -13,22 +13,22 @@
 	    		{{path}}
 			</small>
 		</div>
-	</a>
+	</div>
 </template>
 <script type="text/javascript">
 module.exports = {
 	props: ['title', 'path']
 }
 </script>
-<style lang="css">
-	a.link-ref {
+<style lang="css" scoped>
+	.link-ref {
 		font-size: 1.2rem;
 		border: 1px #eee solid;
 		border-radius: 3px;
 		background-color: #fff;
 		text-decoration: none !important;
 	}
-	a.link-ref:hover {
+	.link-ref:hover {
 		background-color: #fafdff;
 	}
 </style>

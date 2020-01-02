@@ -10,16 +10,16 @@ description: >-
 
 **Arduino 相容裝置** 例如 Arduino MKR,  Ethernet hats + Arduino classic boards, ESP8266, NodeMCU, TI CC3200 等。
 
-<linkref title="Arduino" path="/devices/arduino"></linkref>
+[<ClientOnly><linkref title="Arduino" path="/devices/arduino"></linkref></ClientOnly>](/devices/arduino/)
 
 **Linux 裝置**, 包括 **Raspberry Pi**, **Intel Edison** 與其他任何執行 Linux 或 MacOs 的電腦。
 
-<linkref title="Linux / Raspberry Pi" path="/devices/linux"></linkref>
+[<ClientOnly><linkref title="Linux / Raspberry Pi" path="/devices/linux"></linkref></ClientOnly>](/devices/linux/)
 
 **低功耗 裝置** 或 **邊緣裝置** 例如 **Sigfox**, **LoraWAN**, **TheThingsNetwork** 或其他任何具有閘道(gateways)的裝置。
 
-<linkref title="Sigfox" path="/devices/sigfox"></linkref>
+[<ClientOnly><linkref title="Sigfox" path="/devices/sigfox"></linkref></ClientOnly>](/devices/sigfox/)
 
 **其它的裝置或第三方平台** Thinger.io 客戶端無法提供支援的裝置或第三方平台也可以使用我們的開放式API進行結合。
 
-<linkref title="HTTP裝置" path="/devices/http-devices"></linkref>
+[<ClientOnly><linkref title="HTTP裝置" path="/devices/http-devices"></linkref></ClientOnly>](/devices/http-devices/)

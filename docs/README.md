@@ -27,7 +27,7 @@ Thinger.io為一開源物聯網平台專案，它提供了每個原型設計所�
 * **雙向的高效率通訊：** 平台允許您自數千個裝置中讀取即時數據，亦可以極低的延遲向其發送資料。此適用於自動控制項目或遠端控制系統。
 * **蒐集裝置數據：** 只需幾次點擊即可快速建立數據儲存桶，以可擴展、高效且低成本的方式存儲IoT數據，還可以進行即時資料聚合。
 * **視覺化即時或已存取的數據：** 透過我們強大的 Dashboard 功能，可以快速建立友善的數據可視化介面，並且在幾分鐘內與客戶共享。
-* **致力於擴充性：** 可同時於平台上部署多個不同的插件建立可擴充的系統。
+* **致力於擴充性：** 可同時於平台上部署多個不同的擴充元件建立可擴充的系統。
 * **與第三方服務整合** 我們的開放式API可以讀取數據並與第三方網路平台與自定義程式共享。
 
 您準備好開始建立物聯網項目了嗎？ [**在此建立您的免費帳戶**](https://console.thinger.io/#/signup) 然後透過以下教學學習這項技術的所有內容。
@@ -58,7 +58,7 @@ Thinger.io為一開源物聯網平台專案，它提供了每個原型設計所�
 
 ::: tip 在下一部分中找到有關Thinger.io裝置的額外資訊：
 1. [**與 Arduino 和 Linux 相容的裝置**](/devices/)
-2. [**從零開始： Thinger.io 韌體程式設計指南**](/coding/)
+2. [**從零開始： Thinger.io 韌體程式設計指南**](/coding)
 3. **連接故障排除指南**
 
 :::
@@ -74,10 +74,11 @@ Thinger.io為一開源物聯網平台專案，它提供了每個原型設計所�
 :::
 
 ::: tab Sigfox / LoRaWAN 裝置
-任何單獨的Sigfox或LoraWAN裝置只需要將HTTP裝置回調設定到其回調管理器中，都可以使用我們的API作為HTTP裝置進行結合，但如果要使用這些技術建立TTN(物聯網間網路)，則最好使用我們發布的插件：
+任何單獨的Sigfox或LoraWAN裝置只需要將HTTP裝置回調設定到其回調管理器中，都可以使用我們的API作為HTTP裝置進行結合，但如果要使用這些技術建立TTN(物聯網間網路)，則最好使用我們發布的擴充元件：
 
-<linkref title="Sigfox" path="/plugins/sigfox"></linkref>
-<linkref title="ThingsNetwork" path="/plugins/the-things-network"></linkref>
+[<ClientOnly><linkref title="Sigfox" path="/plugins/sigfox"></linkref></ClientOnly>](/plugins/sigfox/)
+
+[<ClientOnly><linkref title="ThingsNetwork" path="/plugins/the-things-network"></linkref></ClientOnly>](/plugins/the-things-network/)
 
 :::
 
@@ -125,15 +126,15 @@ Thinger.io提供了三個用於處理裝置數據的基本工具，這些工具�
 
 ### 5.擴充 Thinger.io
 
-Thinger.io平台可以使用**插件(plugin)**來擴充其他網際網路服務，只要進入我們的 Marketplace 並選擇它。
+Thinger.io平台可以使用 **擴充元件(plugin)** 來擴充其他網際網路服務，只要進入我們的 Marketplace 並選擇它。
 
-<linkref title="插件" path="/plugins/"></linkref>
+[<ClientOnly><linkref title="擴充元件" path="/plugins/"></linkref></ClientOnly>](/plugins/)
 
 ## [相容裝置](/devices/)
 
 Thinger.io本身與硬體並無直接關聯，所以其允許連接基於任何製造商、硬體架構、網路技術或作業系統的電子裝置。此節內容為使用我們提供的程式庫或使用Thinger.io API與HTTP查詢發送數據來解釋如何連接常見的裝置。
 
-<linkref title="裝置" path="/devices/"></linkref>
+[<ClientOnly><linkref title="裝置" path="/devices/"></linkref></ClientOnly>](/devices/)
 
 ## [客戶端程式設計](/coding/)
 
@@ -141,8 +142,7 @@ Thinger.io本身與硬體並無直接關聯，所以其允許連接基於任何�
 
 本節將介紹如何向裝置新增不同的功能，以公開資源，調用端點或讀取基於Websocket實現的即時數據串流。
 
-<linkref title="程式設計" path="/coding/"></linkref>
-
+[<ClientOnly><linkref title="程式設計" path="/coding"></linkref></ClientOnly>](/coding/)
 
 ## [雲端控制台(Cloud Console)](/console/)
 
@@ -150,4 +150,4 @@ Thinger.io本身與硬體並無直接關聯，所以其允許連接基於任何�
 
 ![](~@overview/console.png)
 
-<linkref title="雲端控制台" path="/console/"></linkref>
+[<ClientOnly><linkref title="雲端控制台" path="/console/devices-administration"></linkref></ClientOnly>](/console/devices-administration/)

@@ -40,7 +40,7 @@ Arduino Library本身即附帶範例，請參考圖示處的資料夾內，打�
 
 ## CC3000
 
-本處使用集成了Arduino Leonardo+CC3000 的開發板`DFRobot WiDo` 作為測試板
+本處使用整合了Arduino Leonardo+CC3000 的開發板`DFRobot WiDo` 作為測試板
 Arduino Leonardo使用ATmega32U4作為MCU
 
 ::: warning

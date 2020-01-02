@@ -408,7 +408,7 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODYwNDkxNTcsImlhdCI6MTQ4
 
 * **成功回應：**
   * **HTTP狀態：** 200
-  * **內文:**有關建立的令牌的資訊，例如其標識符，名稱和令牌本身。
+  * **內文：** 有關建立的令牌的資訊，例如其標識符，名稱和令牌本身。
 
     ```javascript
     {

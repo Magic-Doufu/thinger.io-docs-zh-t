@@ -17,7 +17,7 @@ module.exports = {
   theme: 'thindark',
   themeConfig: {
     nav:[
-      //{text: '傳產工業4.0協作企劃', link: '' },
+      {text: '傳產工業4.0協作企劃', link: 'https://magic-doufu.github.io/Industry-4.0-Web/' },
       {text: '原文文檔', link: 'https://docs.thinger.io/' }
     ],
     sidebar:[
@@ -31,6 +31,7 @@ module.exports = {
             ['/devices/arduinoboardsexamples', 'ARDUINO 開發板範例'],
             ['/devices/linux', 'LINUX / RASPBERRY PI'],
             ['/devices/sigfox', 'SIGFOX'],
+            ['/devices/http-devices', 'HTTP 裝置'],
           ]
       },
       ['/coding', '程式設計'],
@@ -47,6 +48,16 @@ module.exports = {
           ]
       },
       ['/api', 'API'],
+      {
+          title: '擴充元件',
+          sidebarDepth: 1,
+          children: [
+            ['/plugins/', '擴充元件'],
+            /*['/plugins/node-red', 'Node-RED擴充元件'],
+            ['/plugins/sigfox-plugin', 'Sigfox擴充元件'],
+            ['/plugins/The-Things-Network-Plugin', 'The Things Network Plugin擴充元件'],*/
+          ]
+      },
       ['/server-configuration', '伺服器管理'],
       ['/deployment', '伺服器部署']
     ],
@@ -63,7 +74,8 @@ module.exports = {
         '@linux': '../assets/Linux',
         '@coding': './assets/Coding',
         '@cloud': '../assets/Cloud',
-        '@api': './assets/API'
+        '@api': './assets/API',
+        '@plugins': '../assets/plugins'
       }
     }
   }

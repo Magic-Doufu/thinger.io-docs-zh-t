@@ -14,13 +14,13 @@ Sigfox與LPWAN行業的許多公司合作，如德州儀器公司或Silicon Labs
 
 此過程分為兩個部分，一方面，準備Thinger.io以從Sigfox接收數據，另一方面，配置Sigfox雲端回調，該回調將訊息發送回Thinger.io。在下一部分中，我們將從Thinger.io的步驟開始，對這兩個部分進行說明：
 
-有兩種方法可以配置Thinger.io與Sigfox裝置一起使用。最好的選擇是部署`Sigfox插件`，該插件將提供管理與裝置自動設定功能，上傳/下載鏈路payload處理和裝置管理等進階功能，但是此選項僅適用於已付費訂閱的開發人員。Freemium使用者還是可以按照下面的"傳統結合"部分來結合Sigfox裝置：
+有兩種方法可以配置Thinger.io與Sigfox裝置一起使用。最好的選擇是部署`Sigfox擴充元件`，該擴充元件將提供管理與裝置自動設定功能，上傳/下載鏈路payload處理和裝置管理等進階功能，但是此選項僅適用於已付費訂閱的開發人員。Freemium使用者還是可以按照下面的"傳統結合"部分來結合Sigfox裝置：
 
-### **進階結合 \(使用Sigfox插件\)**
+### **進階結合 \(使用Sigfox擴充元件\)**
 
-<linkref title="Sigfox插件" path="/plugins/sigfox.md"></linkref>
+[<ClientOnly><linkref title="Sigfox擴充元件" path="/plugins/sigfox"></linkref></ClientOnly>](/plugins/sigfox/)
 
-### 傳統結合 \(無插件\)
+### 傳統結合 \(無擴充元件\)
 
 我們需要在Thinger.io帳戶中設定一些資源，例如，定義Sigfox數據的存儲位置，以及對Sigfox平台的存取以將數據存儲在我們的帳戶中。所需的步驟在以下小節中定義。
 

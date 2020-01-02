@@ -134,7 +134,7 @@
 * **Subtitle**: 小工具的副標題。
 * **Background**: 可供選擇的小工具背景顏色 \(預設是白色的\)。
 
-::: detail 官方文件似乎有點問題
+::: details 官方文件似乎有點問題
 This widget has a particularity behavior in relation to this parameter. Pressing into the green "+" button, It is possible to select different background colors depending on the real time value that is being shown: 
 
 Then, the Led indicator menu tab allows selecting the data source, that can be a connected device or a data bucket:

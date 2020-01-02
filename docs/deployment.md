@@ -4,101 +4,101 @@ description: >-
   deployment of a private Thinger.io platform server.
 ---
 
-# SERVER DEPLOYMENT
+# 伺服器部署
 
-Freemium accounts are perfect for learning and testing Thinger.io platform with only few limitations, however, for getting the best performance and reliability of this platform and access to some advanced features that are essential for professional use, it is necessary to deploy a private Thinger.io Server. 
+Freemium帳戶的限制很少，是學習和測試Thinger.io平台的理想選擇，但是為了獲得該平台的最佳性能和可靠性以及存取某些對於專業用途必不可少的進階功能，有部署私有Thinger .io伺服器的必要。
 
-## Private Instance Benefits
+## 私有實體的好處
 
-Thinger.io supports private cloud deployments that can be automatically launched from the pricing page. Private instances are isolated servers for each customer, so the instance is not shared with other thousands of users from our community. 
+Thinger.io支援可以從定價頁面自動啟動的私有雲部署。私有實體是每位客戶的獨立伺服器，因此不會與社區中的其他數千名使用者共享資源。
 
-Next list details every Thinger.io Private instances advantages: 
+下面的列表詳細介紹了 Thinger.io 私有實體的所有優點： 
 
-* 100% **Private Server**, hosted in AWS, Digital Ocean, Google Cloud, Microsoft Azure cloud providers, or on-premise host.
-* **Unlimited** devices, Dashboards, Data Buckets, Access Token & sampling intervals
-* **Plugins** System Deployment with different extensions available. 
-* **Multiple User Support** that allows to create and manage individual customer accounts in your server.  
-* **Multi Tenancy Support** with multiple web-console rebranding profiles and web domains hosted by just one server instance.  
-* Support for multiple databases with real-time **data aggregation**
+* 100％ **私有伺服器** ，託管在AWS，Digital Ocean，Google Cloud，Microsoft Azure雲端供應商或內部部署的主機中。
+* **無限制的** 裝置，儀表板，數據桶，存取令牌和採樣間隔
+* **擴充元件** 系統可與不同擴充功能一起部署。 
+* **多使用者支援** 這允許在伺服器中建立並管理獨立客戶帳戶。
+* **多租戶支援** 具有單一伺服器實體託管多個不同品牌Web控制台設定檔和網域的功能。
+* 支援對多個資料庫進行即時**數據聚合**
 
-## Subscribing and Deploying a Cloud Instance
+## 訂閱和部署雲端實體
 
-This process allows launching a completely private and customized Thinger.io IoT Server within minutes just accessing out Pricing Page in the "pricing" button of our Web Home \(Also available at this [**link**](https://pricing.thinger.io)\). and following the next steps:
+此過程允許在幾分鐘之內啟動完全私有和自定義的Thinger.io IoT伺服器，只需存取Web主頁"pricing"按鈕中的"pricing"頁面即可（也可在此[**link**](https：//pricing.thinger.io)）。然後執行以下步驟：
 
-### 1. Select any cloud provider
+### 1.選擇任何雲端供應商
 
-Private instances can be started in different cloud providers like Digital Ocean, Amazon Web Services, Google Cloud, or Azure in different availability zones. In that order, if our customer has already been using any of these providers for their company cloud infrastructure, it is possible to run Thinger.io Private server in the same location. 
+可以在不同可用性區域中的不同雲端供應商（例如Digital Ocean，Amazon Web Services，Google Cloud或Azure）中啟動私有實體。按照該順序，如果我們的客戶已經使用了這些提供程式中的任何一個作為其公司雲基礎結構，則可以在同一位置執行Thinger.io 私有伺服器。
 
-<!--![](.gitbook/assets/image%20%28130%29.png)-->
+![](~@server/Clouds.png)
 
-### 2. Select the right license
+### 2.選擇正確的許可證
 
-Private instances can be deployed over four licensing possibilities, each one provides different privileges and is fitted with an appropriate hardware host to the size of each project, as shown in the image below:
+私有實體可以部署在四種授權等級上，每種許可都提供不同的特權，並根據每個項目的大小設定適當的主機硬體，如下圖所示：
 
-<!--![](.gitbook/assets/image%20%2896%29.png)-->
+![](~@server/Pricing.png)
 
-This pricing includes the software license and all cloud expenses. Note that it is possible to select monthly or yearly license with a great discount. 
+此處的價格包含軟體授權和所有雲端費用。請注意，選擇每月或每年的方案可以得到很大的折扣。
 
-The next table shows all different features that are provided by each license as well as a desirable purpose specification. It is possible to select one license and change it in the future using the administration account. 
+下表顯示了每個許可證提供的所有不同功能以及各種目的的理想規格。可以選擇一個許可證並在將來使用管理帳戶進行更改。
 
-|  | **MAKER** | **GROW** | **STARTUP** | **BUSINESS** |
-| :--- | :--- | :--- | :--- | :--- |
-| **Devices** | Unlimited | Unlimited | Unlimited | Unlimited |
-| **Dashboards** | Unlimited | Unlimited | Unlimited | Unlimited |
-| **Plugins** | 1 | 3 | 6 | Unlimited |
-| **Rebranding** | \*\*\*\* | ✓ | ✓ | Included |
-| **Custom Domain** | \*\*\*\* | ✓ | ✓ | Included |
-| **Extended support** | \*\*\*\* | ✓ | ✓ | included |
-| **Multiple Account** | \*\*\*\* | ✓ | ✓ | ✓ |
-| **Cluster Server** | \*\*\*\* |  |  | ✓ |
-| **High Availability**  | \*\*\*\* |  |  | ✓ |
-| **Recommended network size** | Individual projects | &lt;10 user accounts. | 10 to 50 accounts |  &gt;50 user accounts |
+|  					| **MAKER** | **GROW** 	| **STARTUP** 	| **BUSINESS** 	|
+| :--- 				| :--- 		| :--- 		| :--- 			| :--- 			|
+| **裝置數** 		| Unlimited | Unlimited | Unlimited 	| Unlimited 	|
+| **儀表板樹** 		| Unlimited | Unlimited | Unlimited 	| Unlimited 	|
+| **擴充元件數**			| 1 		| 3 		| 6 			| Unlimited 	|
+| **品牌重造數** 	|  			| ✓ 		| ✓ 			| Included 		|
+| **客製化網域** 	|  			| ✓ 		| ✓ 			| Included 		|
+| **擴充支援** 		|  			| ✓ 		| ✓ 			| included 		|
+| **多帳號支援** 	|  			| ✓ 		| ✓ 			| ✓ 			|
+| **叢集伺服器** 	|  			|  			|  				| ✓ 			|
+| **高可用性**  		|  			|  			|  				| ✓ 			|
+| **推薦的網路規模** 	| Individual projects | &lt;10 user accounts. | 10 to 50 accounts |  &gt;50 user accounts |
 
-### 3.  Configure preferences
+### 3. 修改偏好設定
 
-Ones the license has been selected, it is possible to custom the service with some preferences such as:
+已經選擇了一個許可證，可以通過一些偏好設定來客製服務，例如：
 
-* **Region**: each cloud provider has server farms in different locations around the world. This option allows you to select the closest in order to minimize latency or host the private instance on the same farm as the rest of the client's enterprise software.
-* **Hostname**: enter here the grey-label name that will have the IoT server. This hostname will always be accompanied by the subdomain ".thinger.io" unless the "custom domains" option is selected.
-* **Admin Email**: this account will be assigned for the administration of the private server. It will be the only one that will be able to register new users, domains, rebrandings, plugins etc.
-* **Additional users**: Every private instance always has one user account, but this option allows to increase the amount of accounts in order to share the server with other collaborators or customers. However, note that the server could be overloaded if a large number of user accounts with plugins is added, affecting the proper functioning of the instance.
-* **Extended Support**: This option is recommended in order to obtain Thinger.io engineers development support. It provides 24-48h response time, however all accounts can use the community discussion forum to obtain support from other community developers at: https://community.thinger.io
-* **Custom Domains**: It is the amount of different web domains that can be redirected to the same Private Instance in order to create multiple rebrandings.
-* **Custom Brands**: It is the amount of different console rebrandings that can be created over the same server. Each rebrand may have a different customization of colors, web-domain and logotypes.
+* **Region**: 每個雲端供應商在全球不同位置都有伺服器中心。使用此選項，您可以選擇最接近的主機，以最大程度地減少延遲，或將私有實體與客戶端企業軟體的其餘部分託管在同一伺服器中心。
+* **Hostname**: 在此處輸入將帶有IoT伺服器的灰色標籤名稱。除非選擇"custom domains"選項，否則此主機名將始終帶有子網域".thinger.io"。
+* **Admin Email**: 該帳戶將被分配用於管理私人伺服器。這將是唯一能夠註冊新使用者、域、品牌重塑、擴充元件等的人。
+* **Additional users**: 每個私有實體擁有一個使用者帳戶，而此選項允許增加帳戶數量，以便與其他協作者或客戶共享伺服器。但是，請注意，如果加入了大量帶有擴充元件的使用者，伺服器可能會過載，從而影響實體的正常執行。
+* **Extended Support**: 建議使用此選項以獲得Thinger.io工程師的開發支援。它提供了24-48小時的回應時間，所有帳戶都可以使用社區討論論壇從以下位置獲得其他社區開發人員的支援：https://community.thinger.io
+* **Custom Domains**: 可以重定向到同一私有實體以建立多個品牌重塑的不同Web域的數量。
+* **Custom Brands**: 這是可以在同一伺服器上建立的不同控制台品牌重塑的數量。每個品牌重塑可以具有不同的顏色，網域和Logo。
 
-### 4. Checkout and payment options
+### 4. 結帳與付款方式
 
-Ones everything has been configured, the checkout process is really simple, just introduce your billing email \(the one that will receive the invoices from our side\), that can also be the same as the "Admin Email". 
+一切都已經設定好了，結帳過程真的很簡單，帳單只需輸入您的電子郵件\(將會收到我們方的發票\），也可以與"Admin Email"相同。 
 
-<!--![](.gitbook/assets/image%20%28177%29.png)-->
+![](~@server/OrderEmail.png)
 
-Then include your billing address. VAT number will be required if the customer is in the European Union in order to calculate the right taxes and build the invoice.
+然後輸入您的帳單郵寄地址。如果客戶在歐盟境內，則需要提供增值稅號，以便計算正確的稅款並產生發票。
 
-<!--![](.gitbook/assets/image%20%2889%29.png)-->
+![](~@server/Billing.png)
 
-Finally, it is necessary to select the payment method between Credit Card or Direct Debit, that allows the domiciliation of the payment with SEPA tansferences. Once the payment process is finished, Thinger.io customer management system will automatically configure the cloud host and deploy the private server instance. 
+最後，有必要在信用卡或直接簽帳之間選擇一種付款方式，該方式可以使用SEPA身份進行註冊。付款過程完成後，Thinger.io客戶管理系統將自動配置雲端主機並部署私有伺服器實體。
 
-## Steps After Contracting
+## 簽約後的步驟
 
-The deployment process delays few minutes. As soon as it has been completed a confirmation mail will be sent to the "Admin Email", meaning that the server is completely ready. To start working with it, just follow the next steps:
+部署過程會延遲幾分鐘。完成後，確認郵件將發送到"管理員電子郵件(Admin Email)"，這意味著伺服器已準備就緒。要開始使用它，只需執行以下步驟：
 
-### First Login
+### 首次登錄
 
-1\) Access the server by writing the selected web-domain in a web browser, for example "acme.do.thinger.io".  This allows accessing the login page of the private server instance.   
+1\) 通過在Web瀏覽器中寫入選定的Web網域, 例如​​ "acme.do.thinger.io"來存取伺服器，這允許存取私有伺服器實體的登錄頁面。
 
-2\) Note that this server has never been accessed before, and it is a completely isolated instance so there is not any user account created, so it is necessary to click on "Create account" button, and fill the form to create a new user profile using the "Admin Email" address \(any other address will obtain an unauthorized message\).
+2\) 請注意，此伺服器之前從未存取過，它是一個完全隔離的實體，因此沒有建立任何使用者帳戶，因此必須點擊"Create account"按鈕，並填寫表單以使用"管理員電子郵件"（其他任何地址都會顯示未經授權的訊息）建立新的使用者。
 
-3\) After creating the new account it is possible to access the new server. It is not necessary to confirm the mail address. 
+3\) 建立新帳戶後，可以存取新伺服器。無需確認郵件。
 
-### First Device Connection
+### 連接第一個裝置
 
-When working with a private Thinger.io Server Instance, it is necessary to modify the devices server hostname in order to introduce the right one. To make the redirection the next code line needs to be introduced on the top of the devices source code: 
+使用私有Thinger.io伺服器實體時，有必要修改裝置伺服器的主機名以引入正確的主機名。為了進行重定向，需要在裝置源代碼的頂部引入以下程式碼：
 
 `#define THINGER_SERVER`
 
-Not doing this will cause the device to try to establish a connection to the public Thinger.io Platform Community Server instead of working against the new private server.
+不這樣做將導致裝置嘗試建立與公共Thinger.io平台社區伺服器的連接，而不是與新的私有伺服器進行連接。
 
-## On premise instances
+## 內部部署的實例
 
-## Devices redirection
+## 裝置重定向
 

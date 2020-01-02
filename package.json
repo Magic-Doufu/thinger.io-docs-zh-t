@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "markdown-it-task-lists": "^2.1.1",
+    "vue-client-only": "^2.0.0",
     "vuepress-plugin-element-tabs": "https://github.com/Magic-Doufu/vuepress-plugin-tabs/tarball/master"
   },
   "devDependencies": {

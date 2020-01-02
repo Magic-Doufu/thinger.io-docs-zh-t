@@ -17,7 +17,7 @@
 首先，點擊**Add Device**，這將打開一個表單，您可以在其中輸入`裝置ID`與`憑證`。並從下拉列表中選擇**Device Type**，選擇以下之一類型：
 
 * Generic device: 適用於裝有Thinger.io客戶端的裝置。例如Raspberry Pi，Linux或Arduino裝置。
-* HTTP device: 此選項允許您在沒有完全集成的情況下從第三方平台和商業裝置中取得數據以進行資訊處理。 
+* HTTP device: 此選項允許您在沒有完全整合的情況下從第三方平台和商業裝置中取得數據以進行資訊處理。 
 * Thinger Core 32 device: 僅適用於上面裝有Thinger.io Core的ESP32模組。
 
 選擇裝置類型後，應該填寫如下表單：
@@ -37,13 +37,13 @@
 
 現在，您可以使用新裝置ID和裝置憑據來連接新裝置。根據您的裝置，您將需要安裝所需的程式庫或開發環境，因此請根據您的裝置簽出以下部分：
 
-<linkref title="Arduino" path="/devices/arduino.md"></linkref>
+[<ClientOnly><linkref title="Arduino" path="/devices/arduino"></linkref></ClientOnly>](/devices/arduino/)
 
-<linkref title="Linux/Raspberry Pi" path="/devices/linux.md"></linkref>
+[<ClientOnly><linkref title="Linux/Raspberry Pi" path="/devices/linux"></linkref></ClientOnly>](/devices/linux/)
 
 請記住，Sigfox裝置不共享已連接裝置的概念，因為它們預設情況下是定期發送資訊的離線裝置。如果您想存取來自這些裝置的資訊，請檢視以下文件。
 
-<linkref title="Sigfox" path="/devices/sigfox.md"></linkref>
+[<ClientOnly><linkref title="Sigfox" path="/devices/sigfox"></linkref></ClientOnly>](/devices/sigfox/)
 
 對於以下範例，我們將使用Arduino IDE和ESP8266裝置，如NodeMCU，在這種情況下，您可以打開ESP8266的範例程式，並填寫裝置詳細資訊：您的使用者名，裝置ID以及建立裝置時建立的裝置憑證。下圖顯示了程式與帳戶中建立的裝置之間的關係。
 
@@ -157,7 +157,7 @@ https://<Thinger_Server>/v3/users/<Username>/devices/<Device_ID>/callback?author
 
 ![](~@cloud/addTockenForm.png)
 
-令牌此時已經保存，界面將顯示要在REST API調用中使用的存取令牌，如下圖所示。如果您需要幫助以在REST API調用中集成此存取令牌，請檢視[此文件](http://docs.thinger.io/api/#authentication-api-rest-api-authentication)。
+令牌此時已經保存，界面將顯示要在REST API調用中使用的存取令牌，如下圖所示。如果您需要幫助以在REST API調用中整合此存取令牌，請檢視[此文件](http://docs.thinger.io/api/#authentication-api-rest-api-authentication)。
 
 ![](~@cloud/device_token_value.png)
 
