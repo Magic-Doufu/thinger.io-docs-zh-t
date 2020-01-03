@@ -23,8 +23,9 @@ Node-RED是IBM建立的一個開源項目，旨在為Rule Engines市場提供一
 
   3\)將數據發送到連接的裝置。（device write 節點）
 
-  4\) 呼叫端點 \(endpoint call 節點\).  
-  5\) 寫入數據桶 \(bucket write 節點\).
+  4\) 呼叫端點 \(endpoint call 節點\)
+
+  5\) 寫入數據桶 \(bucket write 節點\)
 
 ## Node-RED 概念
 
@@ -146,7 +147,6 @@ Node-RED本質上包含在開發工具中，該工具具有兩個基本組件：
 5.裝置位置更新
 6.端點被調用
 
-The configuration of each type requires to include the ID of the element that wants to be supervised. It is also possible to monitor every elements leaving the identifier field empty.
 每種類型的設定都需要包括要監控的元素ID。也可以將ID字段保留為空以監視每個元素。
 
 當這些事件中的任何一個觸發時，該節點就可以在流程中注入JSON，該JSON具有已生成事件的儲存桶，裝置或端點的ID以及相關數據。
@@ -154,13 +154,12 @@ The configuration of each type requires to include the ID of the element that wa
 ## 有用的流程範例
 
 在本節中，您可以找到我們自己的說明書，其中包含一些有用的流程，您可以使用這些手冊從此整合的擴充元件中獲得最大的效益。
-In this section you can find our own cookbook with some useful flows that you can use to get the maximum benefit from this integration
 
 ::::: tabs type:card
 :::: tab 裝置連線中斷警報 lazy
 使用伺服器事件節點的"Device Status Change"屬性，可以檢測到IoT網絡中任何裝置的中斷連線，並在Node-RED中執行流程以使用例如調用電子郵件端點來傳送通知。
 ::: tip
-[在此處了解如何建立電子郵件端點。](https://docs.thinger.io/console#email-endpoint)
+[在此處了解如何建立電子郵件端點。](../console/endpoints.html#%E9%9B%BB%E5%AD%90%E9%83%B5%E4%BB%B6%E7%AB%AF%E9%BB%9E)
 :::
 
 下一個流程使用兩個Thinger.io節點，第一個在裝置與伺服器中斷連線時觸發，該事件將產生包含裝置ID、狀態和變更時間的時間戳的JSON格式訊息。第二個節點允許調用Endpoint設定檔以發送帶有附加裝置資訊JSON的警報，因此可以自定義訊息以輕鬆識別問題。
@@ -201,7 +200,7 @@ MQTT是IoT中的擴展通訊協議，其執行在TCP/IP協議上。它被設計�
 通過"device\_location"屬性建立此整合，可以非常簡單的方式整合任何類型的裝置，包括Thinger.io軟體客戶端， Sigfox，TTN甚至HTTP裝置。
 
 ::: tip
-[在此處了解如何建立電子郵件端點。](https://docs.thinger.io/console#email-endpoint)
+[在此處了解如何建立電子郵件端點。](../console/endpoints.html#%E9%9B%BB%E5%AD%90%E9%83%B5%E4%BB%B6%E7%AB%AF%E9%BB%9E)
 :::
 
 使用這個JSON可以將此流程輕易的匯入到您使用的Node-RED工作區：
