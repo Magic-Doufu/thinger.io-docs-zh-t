@@ -53,8 +53,8 @@ module.exports = {
           sidebarDepth: 1,
           children: [
             ['/plugins/', '擴充元件'],
-            /*['/plugins/node-red', 'Node-RED擴充元件'],
-            ['/plugins/sigfox-plugin', 'Sigfox擴充元件'],
+            ['/plugins/node-red', 'Node-RED擴充元件'],
+            /*['/plugins/sigfox-plugin', 'Sigfox擴充元件'],
             ['/plugins/The-Things-Network-Plugin', 'The Things Network Plugin擴充元件'],*/
           ]
       },
