@@ -31,7 +31,7 @@ description: Plugin to improve the integration of Sigfox devices
 * Device Type: 這是一種概念，它定義出一組通常在上行鏈路和下行鏈路中傳送相同類型的數據的裝置。
 
 ::: tip
-由[**此處** ](https://docs.thinger.io/hardware-devices/sigfox#create-sigfox-callback)了解如何設定Sigfox回調以將數據傳送到Thinger.io平台
+由[**此處** ](../devices/sigfox.html#%E5%BB%BA%E7%AB%8B-sigfox-%E5%9B%9E%E8%AA%BF)了解如何設定Sigfox回調以將數據傳送到Thinger.io平台
 :::
 
 ## 擴充元件設定
